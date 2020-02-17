@@ -1,0 +1,19 @@
+name: Build and deploy
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Hugo site
+      uses: srt32/hugo-action@v0.0.3
+    - name: Deploy with FTP
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      with:
+        ftp_server: ${{ secrets.FTP_SERVER }}
+        ftp_username: ${{ secrets.FTP_USERNAME }}
+        ftp_password: ${{ secrets.FTP_PASSWORD }}
+        method: ftp
+        port: 21
+        local_dir: public
+        args: '--delete'
