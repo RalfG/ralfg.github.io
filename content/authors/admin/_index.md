@@ -74,12 +74,8 @@ email: ""
 #- Researchers
 #- Visitors
 
-#Everything related to informatics has always been of great interest to me. Nevertheless, I thoroughly enjoyed studying Biomedical Sciences. During my master thesis, my hobby started to converge with my studies: I had the chance to work on a bioinformatics topic in the CompOmics group. My initial plan was to pursue the Master in Bioinformatics, but when the opportunity came up to apply for an FWO-SB grant, and as such to continue my work in the CompOmics group as a PhD student, I had to take the chance.
-
-#Since January 2018 I am officially working as an FWO-SB PhD fellow in CompOmics, under supervision of prof. Sven Degroeve. My research mainly involves applying Machine Learning to proteomics data, with a focus on the identification of phosphorylated peptides.
-
 ---
 
-In 2017, after completing a bioinformatics thesis project in the [CompOmics](https://compomics.com/) group, I obtained my MSc degree in Biomedical Sciences at Ghent University. Since January 2018 I am continuing the work of my master thesis as an [FWO-SB PhD fellow](https://www.fwo.be/en/) in CompOmics, under supervision of prof. Sven Degroeve and prof. Lennart Martens.
+In 2017, after completing a bioinformatics thesis project in the [CompOmics](https://compomics.com/) group, I obtained my MSc degree in Biomedical Sciences at Ghent University. Since January 2018, I am continuing the work of my master thesis as an [FWO-SB PhD fellow](https://www.fwo.be/en/) in CompOmics, under the supervision of prof. Sven Degroeve and prof. Lennart Martens.
 
-My research mainly involves applying Machine Learning to proteomics data, with a focus on the identification of post-translationally modified peptides. I am also part of the organizational committee of the [European Bioinformatics Community](https://eubic-ms.org/) and help developing community standards in computational mass spectrometry at [HUPO-PSI](http://www.psidev.info/).
+My research mainly involves applying Machine Learning to proteomics data, with a focus on the identification of post-translationally modified peptides. I am also a member of the [European Bioinformatics Community](https://eubic-ms.org/) organizational committee and help developing community standards in computational mass spectrometry at [HUPO-PSI](http://www.psidev.info/).
