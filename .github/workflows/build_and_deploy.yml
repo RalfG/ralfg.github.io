@@ -19,4 +19,4 @@ jobs:
           METHOD: ftp
           PORT: 21
           LOCAL_DIR: public
-          ARGS: --delete --verbose
+          ARGS: --delete --verbose --parallel=10
