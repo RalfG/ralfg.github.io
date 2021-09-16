@@ -108,8 +108,9 @@ contact_links = [
   {icon = "twitter", icon_pack = "fab", name = "@RalfGabriels", link = "https://twitter.com/RalfGabriels"},
   {icon = "github", icon_pack = "fab", name = "RalfG", link = "https://github.com/RalfG"},
   {icon = "linkedin", icon_pack = "fab", name = "RalfGabriels", link = "https://www.linkedin.com/in/ralfgabriels"},
+  {icon = "google-scholar", icon_pack = "ai", name = "Ralf Gabriels", link = "https://scholar.google.com/citations?user=sBKTO0IAAAAJ"},
   {icon = "researchgate", icon_pack = "ai", name = "Ralf_Gabriels", link = "https://www.researchgate.net/profile/Ralf_Gabriels"},
-  {icon = "orcid", icon_pack = "ai", name = "0000-0002-1679-1711", link = "https://orcid.org/0000-0002-1679-1711"},
+  {icon = "orcid", icon_pack = "fab", name = "0000-0002-1679-1711", link = "https://orcid.org/0000-0002-1679-1711"},
 ]
 ############################
 ## Social
@@ -266,3 +267,6 @@ plugins_js  = []
 [marketing]
   google_analytics = "UA-158609629-1"
   google_tag_manager = ""
+
+[icon.pack]
+  ai = true

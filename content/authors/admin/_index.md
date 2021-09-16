@@ -14,7 +14,7 @@ role: PhD student
 
 # Organizations/Affiliations
 organizations:
-- name: CompOmics @ VIB-UGent Center for Medical Biotechnology
+- name: CompOmics @ VIB-UGent Center for Medical Biotechnology, Ghent, BE
   url: "https://www.compomics.com"
 
 # Short bio (displayed in user profile at end of posts)
