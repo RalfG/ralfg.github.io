@@ -19,6 +19,8 @@ abstract: |
   - The general inner workings of database search engines
   - Other types: open-modification, tag-based, de novo, and spectral library searching
 
+doi: 10.5281/zenodo.5509802
+
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
 date: 2021-09-14
@@ -39,7 +41,7 @@ featured: false
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: ""
-  focal_point: ""
+  focal_point: "Left"
   preview_only: false
 
 # Custom links (optional).
@@ -70,3 +72,8 @@ slides: ""
 #   Otherwise, set `projects = []`.
 projects: []
 ---
+Introduction to proteomics identification search engines:
+
+- Overview of the LC-MS/MS DDA workflow
+- The general inner workings of database search engines
+- Other types: open-modification, tag-based, de novo, and spectral library searching
