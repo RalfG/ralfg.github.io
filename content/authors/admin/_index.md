@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Ralf Gabriels
+title: "Ralf Gabriels"
 
 # Username (this should match the folder name)
 authors:
@@ -22,7 +22,7 @@ bio: PhD student @CompOmics, BE
 
 interests:
 - Bioinformatics
-- Machine learning
+- Machine learning & deep learning
 - Computational proteomics and mass spectrometry
 
 education:
@@ -73,6 +73,9 @@ email: ""
 #user_groups:
 #- Researchers
 #- Visitors
+
+# Highlight the author in author lists? (true/false)
+highlight_name: true
 
 ---
 

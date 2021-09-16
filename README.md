@@ -2,10 +2,13 @@
 
 [ralf.gabriels.dev](https://ralf.gabriels.dev)
 
+## Requirements
+- Go 1.15
+- Hugo Extended 0.88
+
 ## Usage
-Has submodule themes/academic  
-Run site locally: `hugo server -D`  
-Building site: `hugo`  
+Run site locally: `hugo server`
+Building site: `hugo`
 Website is updated using GitHub Actions on each GitHub push.
 
 
