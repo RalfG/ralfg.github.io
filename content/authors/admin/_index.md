@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD student
+role: Postdoctoral researcher
 
 # Organizations/Affiliations
 organizations:
@@ -18,15 +18,19 @@ organizations:
   url: "https://www.compomics.com"
 
 # Short bio (displayed in user profile at end of posts)
-bio: PhD student @CompOmics, BE
+bio: Postdoctoral researcher @CompOmics, BE
 
 interests:
 - Bioinformatics
 - Machine learning & deep learning
-- Computational proteomics and mass spectrometry
+- Computational proteomics
+- mass spectrometry
 
 education:
   courses:
+  - course: Doctor in Life Sciences
+    institution: Ghent University
+    year: 2022
   - course: MSc Biomedical Sciences
     institution: Ghent University
     year: 2017
@@ -79,6 +83,6 @@ highlight_name: true
 
 ---
 
-In 2017, after completing a bioinformatics thesis project in the [CompOmics](https://compomics.com/) group, I obtained my MSc degree in Biomedical Sciences at Ghent University. Since January 2018, I am continuing the work of my master thesis as an [FWO-SB PhD fellow](https://www.fwo.be/en/) in CompOmics, under the supervision of prof. Sven Degroeve and prof. Lennart Martens.
+I obtained my MSc degree in Biomedical Sciences at Ghent University in 2017 after completing a bioinformatics thesis project in the CompOmics group. In January 2018, I continued the work of my master thesis as an [FWO-SB PhD fellow](https://www.fwo.be/en/) under the supervision of prof. Sven Degroeve and prof. Lennart Martens. In May 2022, I graduated as Doctor in Life Sciences and was granted a [Junior Postdoctoral Fellowship](https://www.fwo.be/en/) by FWO, starting in October 2022.
 
-My research mainly involves applying Machine Learning to proteomics data, with a focus on the identification of post-translationally modified peptides. I am also a member of the [European Bioinformatics Community](https://eubic-ms.org/) organizational committee and help developing community standards in computational mass spectrometry at [HUPO-PSI](http://www.psidev.info/).
+My research involves investigating novel applications of machine learning in proteomics, with a focus on peptide identification. I am also a member of the [European Bioinformatics Community for Mass Spectrometry](https://eubic-ms.org/) organizational committee and I contribute to the development of community standards in computational mass spectrometry at [HUPO-PSI](http://www.psidev.info/).
