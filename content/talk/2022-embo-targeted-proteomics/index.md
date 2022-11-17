@@ -13,13 +13,13 @@ address:
   country:
 summary: "Lecture: Generating high-quality predicted libraries for DIA dataset peptide detection"
 abstract: |
-Lecture for the 2022 EMBO Course on Targeted Proteomics, entitled _Generating high-quality predicted libraries for DIA dataset peptide detection_. 
+  Lecture for the 2022 EMBO Course on Targeted Proteomics, entitled _Generating high-quality predicted libraries for DIA dataset peptide detection_. 
 
-The following topics were discussed:
-- Introduction on library-free, DDA library, predicted library, and chromatogram library approaches
-- Practical considerations when generating predicted libraries
-- Benchmarking results of using predicted libraries
-- Future perspectives
+  The following topics were discussed:
+  - Introduction on library-free, DDA library, predicted library, and chromatogram library approaches
+  - Practical considerations when generating predicted libraries
+  - Benchmarking results of using predicted libraries
+  - Future perspectives
 
 doi: 10.5281/zenodo.7330732
 
