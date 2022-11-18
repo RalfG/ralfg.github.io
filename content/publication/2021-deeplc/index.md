@@ -9,4 +9,7 @@ featured: true
 publication: "*Nature Methods*"
 tags: ["DeepLC", "Retention time", "Deep learning", "Proteomics"]
 doi: "10.1038/s41592-021-01301-5"
+url_pdf: "https://biblio.ugent.be/publication/8748558/file/8769348.pdf"
+url_project: "https://iomics.ugent.be/deeplc"
+url_code: "https://github.com/compomics/deeplc"
 ---

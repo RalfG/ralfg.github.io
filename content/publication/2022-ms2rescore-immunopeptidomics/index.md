@@ -9,4 +9,7 @@ featured: true
 publication: "*Molecular & Cellular Proteomics*"
 tags: ["bioinformatics", "immunopeptidomics", "machine learning", "proteomics", "mass spectrometry", "peptide identification"]
 doi: "10.1016/j.mcpro.2022.100266"
+url_pdf: "https://biblio.ugent.be/publication/8766058/file/8766059.pdf"
+url_project: "https://github.com/compomics/ms2rescore"
+url_code: "https://github.com/compomics/ms2rescore"
 ---
