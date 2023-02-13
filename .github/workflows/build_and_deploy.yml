@@ -13,13 +13,9 @@ jobs:
           extended: true
       - name: Build
         run: hugo --minify
-      - name: Deploy with FTP
-        uses: SamKirkland/FTP-Deploy-Action@2.0.0
-        env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-          METHOD: ftp
-          PORT: 21
-          LOCAL_DIR: public
-          ARGS: --delete --verbose --parallel=10
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
