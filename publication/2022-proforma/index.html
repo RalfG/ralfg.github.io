@@ -1,0 +1,245 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.3.0 for Hugo">
+<meta name=author content="Ralf Gabriels">
+<meta name=description content="It is important for the proteomics community to have a standardized manner to represent all possible variations of a protein or peptide primary sequence, including natural, chemically induced, and artifactual modifications. The Human Proteome Organization Proteomics Standards Initiative in collaboration with several members of the Consortium for Top-Down Proteomics (CTDP) has developed a standard notation called ProForma 2.0, which is a substantial extension of the original ProForma notation developed by the CTDP. ProForma 2.0 aims to unify the representation of proteoforms and peptidoforms. ProForma 2.0 supports use cases needed for bottom-up and middle-/top-down proteomics approaches and allows the encoding of highly modified proteins and peptides using a human- and machine-readable string. ProForma 2.0 can be used to represent protein modifications in a specified or ambiguous location, designated by mass shifts, chemical formulas, or controlled vocabulary terms, including cross-links (natural and chemical) and atomic isotopes. Notational conventions are based on public controlled vocabularies and ontologies. The most up-to-date full specification document and information about software implementations are available at http://psidev.info/proforma.">
+<link rel=alternate hreflang=en-us href=/publication/2022-proforma/>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<meta name=theme-color content="#3c787b">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin=anonymous media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin=anonymous media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Rubik%7COswald:600%7COxygen+Mono&display=swap">
+<link rel=stylesheet href=/css/wowchemy.7f5f4d2df80828d793af145709cbf26f.css>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158609629-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}function trackOutboundLink(a,b){gtag('event','click',{event_category:'outbound',event_label:a,transport_type:'beacon',event_callback:function(){b!=='_blank'&&(document.location=a)}}),console.debug("Outbound link clicked: "+a)}function onClickCallback(a){if(a.target.tagName!=='A'||a.target.host===window.location.host)return;trackOutboundLink(a.target,a.target.getAttribute('target'))}gtag('js',new Date),gtag('config','UA-158609629-1',{}),gtag('set',{cookie_flags:'SameSite=None;Secure'}),document.addEventListener('click',onClickCallback,!1)</script>
+<link rel=manifest href=/manifest.webmanifest>
+<link rel=icon type=image/png href=/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_3.png>
+<link rel=canonical href=/publication/2022-proforma/>
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@RalfGabriels">
+<meta property="twitter:creator" content="@RalfGabriels">
+<meta property="og:site_name" content="ralf.gabriels.dev">
+<meta property="og:url" content="/publication/2022-proforma/">
+<meta property="og:title" content="Proteomics Standards Initiative’s ProForma 2.0: Unifying the Encoding of Proteoforms and Peptidoforms | ralf.gabriels.dev">
+<meta property="og:description" content="It is important for the proteomics community to have a standardized manner to represent all possible variations of a protein or peptide primary sequence, including natural, chemically induced, and artifactual modifications. The Human Proteome Organization Proteomics Standards Initiative in collaboration with several members of the Consortium for Top-Down Proteomics (CTDP) has developed a standard notation called ProForma 2.0, which is a substantial extension of the original ProForma notation developed by the CTDP. ProForma 2.0 aims to unify the representation of proteoforms and peptidoforms. ProForma 2.0 supports use cases needed for bottom-up and middle-/top-down proteomics approaches and allows the encoding of highly modified proteins and peptides using a human- and machine-readable string. ProForma 2.0 can be used to represent protein modifications in a specified or ambiguous location, designated by mass shifts, chemical formulas, or controlled vocabulary terms, including cross-links (natural and chemical) and atomic isotopes. Notational conventions are based on public controlled vocabularies and ontologies. The most up-to-date full specification document and information about software implementations are available at http://psidev.info/proforma."><meta property="og:image" content="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png">
+<meta property="twitter:image" content="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
+<meta property="article:published_time" content="2022-03-15T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-03-15T00:00:00+00:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"/publication/2022-proforma/"},"headline":"Proteomics Standards Initiative’s ProForma 2.0: Unifying the Encoding of Proteoforms and Peptidoforms","datePublished":"2022-03-15T00:00:00Z","dateModified":"2022-03-15T00:00:00Z","author":{"@type":"Person","name":"Richard D LeDuc"},"publisher":{"@type":"Organization","name":"ralf.gabriels.dev","logo":{"@type":"ImageObject","url":"/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_3.png"}},"description":"It is important for the proteomics community to have a standardized manner to represent all possible variations of a protein or peptide primary sequence, including natural, chemically induced, and artifactual modifications. The Human Proteome Organization Proteomics Standards Initiative in collaboration with several members of the Consortium for Top-Down Proteomics (CTDP) has developed a standard notation called ProForma 2.0, which is a substantial extension of the original ProForma notation developed by the CTDP. ProForma 2.0 aims to unify the representation of proteoforms and peptidoforms. ProForma 2.0 supports use cases needed for bottom-up and middle-/top-down proteomics approaches and allows the encoding of highly modified proteins and peptides using a human- and machine-readable string. ProForma 2.0 can be used to represent protein modifications in a specified or ambiguous location, designated by mass shifts, chemical formulas, or controlled vocabulary terms, including cross-links (natural and chemical) and atomic isotopes. Notational conventions are based on public controlled vocabularies and ontologies. The most up-to-date full specification document and information about software implementations are available at http://psidev.info/proforma."}</script>
+<title>Proteomics Standards Initiative’s ProForma 2.0: Unifying the Encoding of Proteoforms and Peptidoforms | ralf.gabriels.dev</title>
+</head>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=7d949515feaf0db169549413f878cf5c>
+<script src=/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js></script>
+<div class=page-header>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container-xl>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/>ralf.gabriels.dev</a>
+</div>
+<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/>ralf.gabriels.dev</a>
+</div>
+<div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class=nav-link href=/#about><span>About</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#featured><span>Featured</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#publications><span>Publications</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#posters><span>Posters</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#talks><span>Talks</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#contact><span>Contact</span></a>
+</li>
+</ul>
+</div>
+<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>Light</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>Dark</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>Automatic</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class=page-body>
+<div class=pub>
+<div class="article-container pt-3">
+<h1>Proteomics Standards Initiative’s ProForma 2.0: Unifying the Encoding of Proteoforms and Peptidoforms</h1>
+<div class=article-metadata>
+<div>
+<span>
+<a href=/author/richard-d-leduc/>Richard D LeDuc</a></span>, <span>
+<a href=/author/eric-w-deutsch/>Eric W Deutsch</a></span>, <span>
+<a href=/author/pierre-alain-binz/>Pierre-Alain Binz</a></span>, <span>
+<a href=/author/ryan-t-fellers/>Ryan T Fellers</a></span>, <span>
+<a href=/author/anthony-j-cesnik/>Anthony J Cesnik</a></span>, <span>
+<a href=/author/joshua-a-klein/>Joshua A Klein</a></span>, <span>
+<a href=/author/tim-van-den-bossche/>Tim Van Den Bossche</a></span>, <span>
+<a href=/author/ralf-gabriels/>Ralf Gabriels</a></span>, <span>
+<a href=/author/arshika-yalavarthi/>Arshika Yalavarthi</a></span>, <span>
+<a href=/author/yasset-perez-riverol/>Yasset Perez-Riverol</a></span>, <span>
+<a href=/author/jeremy-carver/>Jeremy Carver</a></span>, <span>
+<a href=/author/wout-bittremieux/>Wout Bittremieux</a></span>, <span>
+<a href=/author/shin-kawano/>Shin Kawano</a></span>, <span>
+<a href=/author/benjamin-pullman/>Benjamin Pullman</a></span>, <span>
+<a href=/author/nuno-bandeira/>Nuno Bandeira</a></span>, <span>
+<a href=/author/neil-l-kelleher/>Neil L Kelleher</a></span>, <span>
+<a href=/author/paul-m-thomas/>Paul M Thomas</a></span>, <span>
+<a href=/author/juan-antonio-vizcaino/>Juan Antonio Vizcaino</a></span>
+</div>
+<span class=article-date>
+March 2022
+</span>
+</div>
+<div class="btn-links mb-3">
+<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.1021/acs.jproteome.1c00771 target=_blank rel=noopener>
+DOI
+</a>
+</div>
+</div>
+<div class=article-container>
+<h3>Abstract</h3>
+<p class=pub-abstract>It is important for the proteomics community to have a standardized manner to represent all possible variations of a protein or peptide primary sequence, including natural, chemically induced, and artifactual modifications. The Human Proteome Organization Proteomics Standards Initiative in collaboration with several members of the Consortium for Top-Down Proteomics (CTDP) has developed a standard notation called ProForma 2.0, which is a substantial extension of the original ProForma notation developed by the CTDP. ProForma 2.0 aims to unify the representation of proteoforms and peptidoforms. ProForma 2.0 supports use cases needed for bottom-up and middle-/top-down proteomics approaches and allows the encoding of highly modified proteins and peptides using a human- and machine-readable string. ProForma 2.0 can be used to represent protein modifications in a specified or ambiguous location, designated by mass shifts, chemical formulas, or controlled vocabulary terms, including cross-links (natural and chemical) and atomic isotopes. Notational conventions are based on public controlled vocabularies and ontologies. The most up-to-date full specification document and information about software implementations are available at <a href=http://psidev.info/proforma>http://psidev.info/proforma</a>.</p>
+<div class=row>
+<div class=col-md-1></div>
+<div class=col-md-10>
+<div class=row>
+<div class="col-12 col-md-3 pub-row-heading">Type</div>
+<div class="col-12 col-md-9">
+<a href=/publication/#2>
+Journal article
+</a>
+</div>
+</div>
+</div>
+<div class=col-md-1></div>
+</div>
+<div class="d-md-none space-below"></div>
+<div class=row>
+<div class=col-md-1></div>
+<div class=col-md-10>
+<div class=row>
+<div class="col-12 col-md-3 pub-row-heading">Publication</div>
+<div class="col-12 col-md-9"><em>Journal of Proteome Research</em></div>
+</div>
+</div>
+<div class=col-md-1></div>
+</div>
+<div class="d-md-none space-below"></div>
+<div class=space-below></div>
+<div class=article-style></div>
+<div class=article-tags>
+<a class="badge badge-light" href=/tag/proforma/>ProForma</a>
+<a class="badge badge-light" href=/tag/proteoform/>proteoform</a>
+<a class="badge badge-light" href=/tag/peptidoform/>peptidoform</a>
+<a class="badge badge-light" href=/tag/top-down-proteomics/>top-down proteomics</a>
+<a class="badge badge-light" href=/tag/file-formats/>file formats</a>
+<a class="badge badge-light" href=/tag/data-standards/>data standards</a>
+<a class="badge badge-light" href=/tag/mass-spectrometry/>Mass Spectrometry</a>
+<a class="badge badge-light" href=/tag/fair/>FAIR</a>
+</div>
+<div class=share-box aria-hidden=true>
+<ul class=share>
+<li>
+<a href="https://twitter.com/intent/tweet?url=/publication/2022-proforma/&text=Proteomics%20Standards%20Initiative%e2%80%99s%20ProForma%202.0:%20Unifying%20the%20Encoding%20of%20Proteoforms%20and%20Peptidoforms" target=_blank rel=noopener class=share-btn-twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/sharer.php?u=/publication/2022-proforma/&t=Proteomics%20Standards%20Initiative%e2%80%99s%20ProForma%202.0:%20Unifying%20the%20Encoding%20of%20Proteoforms%20and%20Peptidoforms" target=_blank rel=noopener class=share-btn-facebook>
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="mailto:?subject=Proteomics%20Standards%20Initiative%e2%80%99s%20ProForma%202.0:%20Unifying%20the%20Encoding%20of%20Proteoforms%20and%20Peptidoforms&body=/publication/2022-proforma/" target=_blank rel=noopener class=share-btn-email>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/shareArticle?url=/publication/2022-proforma/&title=Proteomics%20Standards%20Initiative%e2%80%99s%20ProForma%202.0:%20Unifying%20the%20Encoding%20of%20Proteoforms%20and%20Peptidoforms" target=_blank rel=noopener class=share-btn-linkedin>
+<i class="fab fa-linkedin-in"></i>
+</a>
+</li>
+<li>
+<a href="whatsapp://send?text=Proteomics%20Standards%20Initiative%e2%80%99s%20ProForma%202.0:%20Unifying%20the%20Encoding%20of%20Proteoforms%20and%20Peptidoforms%20/publication/2022-proforma/" target=_blank rel=noopener class=share-btn-whatsapp>
+<i class="fab fa-whatsapp"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class=powered-by>
+Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> — the free, <a href=https://github.com/wowchemy/wowchemy-hugo-modules target=_blank rel=noopener>open source</a> website builder that empowers creators.
+</p>
+</footer>
+</div>
+</div>
+<div id=modal class="modal fade" role=dialog>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<h5 class=modal-title>Cite</h5>
+<button type=button class=close data-dismiss=modal aria-label=Close>
+<span aria-hidden=true>&#215;</span>
+</button>
+</div>
+<div class=modal-body>
+<pre><code class="tex hljs"></code></pre>
+</div>
+<div class=modal-footer>
+<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+<i class="fas fa-copy"></i> Copy
+</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+<i class="fas fa-download"></i> Download
+</a>
+<div id=modal-error></div>
+</div>
+</div>
+</div>
+</div>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js crossorigin=anonymous></script>
+<script src=/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js></script>
+<script src=/en/js/wowchemy.min.99ddacf76b31e04b589f8ff7e550cbb8.js></script>
+</body>
+</html>
